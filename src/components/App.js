@@ -9,9 +9,8 @@ console.log(blogData);
 function App() {
   return (
     <div className="App">
-      <Header name="Underreacted"/>
-      {/* so image here doesn't render; not sure where the image source is */}
-      <About about="A blog about learning React" img="../assets/logo.svg" /> 
+      <Header name={blogDate.name}/>
+      <About about={blogData.about} img={blogData.image} /> 
       <ArticleList />
     </div>
   );
